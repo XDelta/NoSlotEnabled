@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<RootNamespace>ExampleMod</RootNamespace>
-		<AssemblyName>ExampleMod</AssemblyName>
+		<RootNamespace>NoSlotEnabled</RootNamespace>
+		<AssemblyName>NoSlotEnabled</AssemblyName>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<TargetFramework>net9.0</TargetFramework>
 		<FileAlignment>512</FileAlignment>
@@ -18,6 +18,8 @@
 		<ResonitePath>$(MSBuildThisFileDirectory)Resonite/</ResonitePath>
 		<ResonitePath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\Resonite\')">C:\Program Files (x86)\Steam\steamapps\common\Resonite\</ResonitePath>
 		<ResonitePath Condition="Exists('$(HOME)/.steam/steam/steamapps/common/Resonite/')">$(HOME)/.steam/steam/steamapps/common/Resonite/</ResonitePath>
+		
+		<ResonitePath Condition="Exists('R:\SteamLibrary\steamapps\common\Resonite\')">R:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
 	</PropertyGroup>
 
 	<ItemGroup>
